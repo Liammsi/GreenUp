@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" type="image/png" href="./src/public/icon.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@300;500&family=Podkova:wght@500&family=Signika+Negative:wght@500&display=swap"
+    rel="stylesheet" />
+
+  <script type="text/javascript"
+    src="https://www.bing.com/api/maps/mapcontrol?key=Avnu0ji1_4GO78QnO-6TuZN_vuDCUYQtyqL1QgA3hROdiQGbUn514KyTM0b5ESeb"></script>
+  <title>Greenup</title>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/mapsstyle.css">
+  <link rel="stylesheet" href="./src/styles/kalkulatorstyle.css">
+  <link rel="stylesheet" href="./src/styles/responsive.css">
+  <link rel="stylesheet" href="./src/styles/reports.css">
+</head>
+
+<body onload="loadMapScenario()">
+  <!-- Navbar-->
+  <nav class="navbar">
+    <a href="#home"><img src="./src/public/image/Green.png" class="logo" alt="GreenUp Logo" />
+
+      <div class="navbar-nav">
+        <a href="#mapnav">Peta</a>
+        <a href="#calculate">Kalkulator Jejak Karbon</a>
+        <a href="#pelaporan">Pelaporan Penghijauan</a>
+        <a href="about.html">About Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <main class="hero-content">
+      <h1>Membangun Lingkungan yang <br>Berkelanjutan Melalui <span> Penghijauan</span></h1>
+      <p>Memanfaatkan Teknologi untuk Mewujudkan <br>Perubahan Positif dalam Lingkungan Hidup</p>
+      <a href="#" class="btn">Tertarik?</a>
+    </main>
+    <div class="images-1">
+      <img src="./src/public/image/img1.png" class="lead1" alt="" />
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="content" id="konten">
+    <div class="text-content">
+      <h2>Pentingnya Penghijauan dalam Masa Kini</h2>
+      <p>Penghijauan merupakan suatu kegiatan penanaman di lahan kosong dengan tujuan untuk memulihkan lahan,
+        mempertahankan dan meningkatkan kembali kesuburannya. Manfaat penghijauan adalah menghasilkan oksigen yang
+        sangat diperlukan untuk pernapasan makhluk hidup, di samping sebagai pengatur lingkungan, karena vegetasinya
+        akan menimbulkan hawa lingkungan setempat yang sejuk dan nyaman. Penghijauan juga dapat mengurangi polusi udara,
+        tanaman dapat mengubah karbon dioksida menjadi oksigen yang sangat dibutuhkan oleh manusia untuk pernapasan
+        melalui proses fotosintesis.</p>
+    </div>
+    <div class="images-2">
+      <img src="./src/public/image/content.png" alt="">
+    </div>
+  </section>
+
+  <!-- MAPS Section -->
+  <section class="maps" id="mapnav">
+    <h1>Daerah Penghijauan Se-Indonesia</h1>
+    <main class="map">
+      <div id="map"></div>
+    </main>
+  </section>
+
+  <!-- Kalkulator Section -->
+  <section class="calculators" id="calculate">
+    <main class="calculator"></main>
+    <h1>Kalkulator Emisi Karbon</h1>
+    <div class="clc">
+      <img src="./src/public/image/Calculator.png" alt="">
+    </div>
+    <label for="electricity"><img src="./src/public/image/electric.png" alt=""></i>Pemakaian Listrik (KWh)</label>
+    <input type="number" id="electricity" name="electricity">
+
+    <label for="gasoline"><img src="./src/public/image/fuel.png" alt="">Pemakaian Bensin (Liter)</label>
+    <input type="number" id="gasoline" name="gasoline">
+
+    <label for="diesel"><img src="./src/public/image/oil.png" alt=""> Pemakaian Solar (Liter)</label>
+    <input type="number" id="diesel" name="diesel">
+
+    <button type="button" id="calculate-button">Hitung Jejak Karbon</button>
+
+    <p id="result"></p>
+  </section>
+
+  <!-- Pelaporan Section -->
+  <section class="report" id="pelaporan">
+    <h1>Pelaporan Lokasi Penghijauan</h1>
+    <h3>"Mari bersatu untuk melindungi dan merawat lingkungan kita. Dengan tindakan bersama, kita dapat menciptakan masa
+      depan yang berkelanjutan dan sehat bagi semua makhluk hidup di bumi ini." </h3>
+    <div class="leaf"><img src="./src/public/image/image1.png" alt=""></div>
+    <div class="leaf2"><img src="./src/public/image/image2.png" alt=""></div>
+    <button type="button" id="reportButton"><a href="./src/reports/index.php" target="_blank">Mulai
+        Melaporkan</a></button>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Content Utama</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="#mapnav">Peta Penghijauan</a></li>
+          <li><a href="#calculate">Kalkulator Jejak Karbon</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-section" id="contact">
+        <div class="logo-social">
+          <img src="./src/public/image/Green.png" class="logo" alt="GreenTechify Logo" />
+          <h4>Mulai melaporkan penghijauan?</h4>
+          <h4>Temukan Kami di Sosial Media</h4>
+          <div class="social-media">
+            <a href="https://bit.ly/3QyTUXn" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://bit.ly/3UsZoUV" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://bit.ly/4ac5ZJh" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Informasi Kontak</h4>
+        <p>Email: dlh@lampungprov.go.id</p>
+        <p>Telepon: 0721-486761</p>
+        <p>Alamat: Jl. Basuki Rahmat No.10, Talang, Kec. Tlk Betung Utara, Kota Bandar Lampung, Lampung 35211</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        copyright © 2024 GreenUp</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
+
+  <script>
+    document.getElementById('reportButton').addEventListener('click', function () {
+      window.open(this.querySelector('a').href, '_blank');
+    });
+  </script>
+
+  <script src="./src/scripts/index.js"></script>
+  <script src="./src/scripts/maps.js"></script>
+  <script src="./src/scripts/kalkulator.js"></script>
+</body>
+
+</html>

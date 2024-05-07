@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenup</title>
+
+  <link rel="shortcut icon" type="image/png" href="./src/public/icon.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@300;500&family=Podkova:wght@500&family=Signika+Negative:wght@500&display=swap"
+    rel="stylesheet" />
+  <link rel="scripts" href="./src/scripts/index.js" />
+
+  <script type="text/javascript"
+    src="https://www.bing.com/api/maps/mapcontrol?key=Avnu0ji1_4GO78QnO-6TuZN_vuDCUYQtyqL1QgA3hROdiQGbUn514KyTM0b5ESeb"></script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/responsive.css">
+</head>
+
+<body onload="loadMapScenario()">
+  <!-- Navbar-->
+  <nav class="navbar">
+    <a href="index.html"><img src="./src/public/image/Green.png" class="logo" alt="GreenTechify Logo" />
+
+      <div class="navbar-nav">
+        <a href="./index.html#mapnav">Peta</a>
+        <a href="./index.html#calculate">Kalkulator Karbon</a>
+        <a href="./src/reports/index.php">Pelaporan</a>
+        <a href="about.html">About Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+  </nav>
+  <!-- About Section -->
+  <section class="about">
+    <h1>Tentang Kami</h1>
+    <div class="card-container">
+      <div class="card">
+        <img src="./src/public/image/gambar1.png" alt="Profile Picture">
+        <h3>Peran Pemerintah dan Masyarakat</h3>
+        <p>Pemerintah dan masyarakat harus bekerja sama untuk mengimplementasikan kebijakan lingkungan yang efektif.</p>
+      </div>
+
+      <div class="card">
+        <img src="./src/public/image/gambar2.png" alt="Profile Picture">
+        <h3>Tantangan Lingkungan</h3>
+        <p>Perubahan iklim, polusi udara dan air, serta deforestasi adalah beberapa tantangan lingkungan yang harus kita
+          hadapi. Mari bersatu untuk mencari solusi yang berkelanjutan.</p>
+      </div>
+
+      <div class="card">
+        <img src="./src/public/image/gambar3.png" alt="Profile Picture">
+        <h3>Manfaat Lingkungan yang Sehat</h3>
+        <p>Lingkungan yang sehat mendukung kesehatan manusia, menyediakan air bersih, udara segar, dan pangan yang
+          berkualitas. Mari kita lindungi lingkungan untuk kesejahteraan bersama.</p>
+      </div>
+
+      <div class="card">
+        <img src="./src/public/image/gambar4.png" alt="Profile Picture">
+        <h3>Peran Individu dalam Pelestarian Lingkungan</h3>
+        <p>Setiap individu memiliki peran penting dalam menjaga kelestarian lingkungan. Tindakan kecil dari setiap orang
+          dapat memiliki dampak besar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Content Utama</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="./index.html#mapnav">Peta Penghijauan</a></li>
+          <li><a href="./index.html#calculate">Kalkulator Karbon</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-section" id="contact">
+        <div class="logo-social">
+          <img src="./src/public/image/Green.png" class="logo" alt="GreenTechify Logo" />
+          <h4>Mulai melaporkan penghijauan?</h4>
+          <h4>Temukan Kami di Sosial Media</h4>
+          <div class="social-media">
+            <a href="https://bit.ly/3QyTUXn" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://bit.ly/3UsZoUV" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://bit.ly/4ac5ZJh" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section" id="contact">
+        <h4>Informasi Kontak</h4>
+        <p>Email: dlh@lampungprov.go.id</p>
+        <p>Telepon: 0721-486761</p>
+        <p>Alamat: Jl. Basuki Rahmat No.10, Talang, Kec. Tlk Betung Utara, Kota Bandar Lampung, Lampung 35211</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        copyright © 2023 GreenUp</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
+
+  <script src="./src/scripts/index.js"></script>
+</body>
+
+</html>
